@@ -9,18 +9,18 @@ int main(){
     int arr[n];
     int *ptr = &arr[0];
     for(int i =0 ;i<n;i++){
-        scanf("%d",&ptr[i]);
+        scanf("%d",ptr+i);
     }
 
 
 
     for(int i=0 ;i<n;i++){
       
-        if(ptr[i]== k){
+        if(*(ptr+i)== k){
             isfound=1;
             break;
         }
-    break;
+   
        
     }
     if(isfound == 1){
